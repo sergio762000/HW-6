@@ -2,6 +2,7 @@
 
 Создание структуры БД для кинотеатра + выборка самого доходного фильма
 
+```
 CREATE TABLE IF NOT EXISTS cinema (
 	id			    serial PRIMARY KEY,
 	name		    varchar	 NOT NULL,
@@ -108,3 +109,4 @@ WHERE t.deleted_at IS NULL
     AND f.deleted_at IS NULL
 ORDER BY total_cash desc
 LIMIT 1
+```
